@@ -3,6 +3,16 @@ from io import BytesIO
 from drafter import *
 import pandas as pd
 
+set_website_title("Corgi Cafe")
+set_site_information(
+    author="Your Name",
+    description="Order snacks for very good dogs.",
+    sources="Thanks to the Drafter docs and my study group.",
+    planning="plan.pdf",
+    links=["https://github.com/your-username/your-repository"]
+)
+# hide_debug_information()
+set_website_framed(False)
 
 @dataclass
 class Calculation:
